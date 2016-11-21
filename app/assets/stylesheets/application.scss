@@ -28,8 +28,13 @@
   margin: 5em;
   border: 1px solid $soft-gray;
 
+  .main-content{
+    margin: 6em 0em;
+  }
+
   h1{
     font-size: 28px;
+    font-weight: 200;
   }
 
   .navigation{
@@ -53,17 +58,21 @@
   }
 
   .footer {
+    height: 100%;
+    padding-bottom: 5em;
     .links {
-      text-align: center;
+      .social {
+        padding: 1em 0;
+        width: 98%;
+        margin: 0 1em;
+        float: left;
+        border-top: 1px solid $soft-gray;
+        border-bottom: 1px solid $soft-gray;
 
-      ul.social {
-        margin: 0;
         li {
           list-style-type: none;
           float: left;
-          font-size: 1em;
-          line-height: 0;
-          margin: 0;
+          font-size: 1.4em;
           padding-right: 0.7em;
 
           &:last-child {
@@ -78,6 +87,7 @@
 
           &:focus, &:hover {
             opacity: 1;
+            cursor: pointer;
           }
         }
       }
