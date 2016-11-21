@@ -4,15 +4,28 @@
   = stylesheet_link_tag    'application', media: 'all'
   = javascript_include_tag 'application'
   = csrf_meta_tags
+  = google_webfonts_init({              |
+    google: ['Varela Round', 'serif'] |
+      })                                  |
+
 
 
 %body#main
-  .inner
-    .navigation
-      %h1 Luke Pfeiffer
-      .actions
-        = link_to 'About', root_path
-        = link_to 'Blog', root_path
-        = link_to 'Resume', root_path
+  %nav.navigation
+    %h1 Luke Pfeiffer
+    .actions
+      = link_to 'About', root_path, rel: 'stylesheet', type: 'text/css', href: 'href="//fonts.googleapis.com/css?family=Varela+Round:400'
+      = link_to 'Blog', root_path
+      = link_to 'Projects', root_path
+      = link_to 'Contact', root_path
+      = link_to 'Resume', root_path
+  %nav.footer{role: 'contentinfo'}
+    .links
+      %ul.social
+        %li= link_to(image_tag('github.png', alt: 'github'), 'https://www.github.com/lukepfeiffer', target: '_blank')
+        %li= link_to(image_tag('linkedin.png', alt: 'linkedin'), 'https://www.linkedin.com/in/luke-pfeiffer-a4a272133', target: '_blank')
+        %li= link_to(image_tag('twitter.png', alt: 'twitter'), 'https://www.twitter.com/lukerpfeiffer', target: '_blank')
+        %li= link_to(image_tag('facebook.png', alt: 'facebook'), 'https://www.facebook.com/luke.pfeiffer.7', target: '_blank')
 
-    = yield
+
+  = yield

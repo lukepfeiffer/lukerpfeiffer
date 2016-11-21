@@ -18,31 +18,67 @@
  */
 
 #main{
-  $background-image: url('background-color.png');
-  $font-size: 14px;
-  $font-default: sans-serif !default;
-  $nav-font-size: 20px;
+  $font: "Varela Round", sans-serif;
+  $header-color: #111111;
+  $link-font-size: 24px;
+  $soft-gray: #999999;
 
-  background-image: $background-image;
-  font-family: $font-default;
+  text-align: center;
+  font-family: $font;
+  margin: 5em;
+  border: 1px solid $soft-gray;
 
-  .inner{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-    border-radius: 4px;
-    height: 500px;
-    .navigation{
+  h1{
+    font-size: 28px;
+  }
+
+  .navigation{
+    text-transform: uppercase;
+    color: $header-color;
+    .actions{
+      a{
+        margin: 0;
+        text-decoration: none;
+        margin: 5px 10px;
+        padding: 0 0 5px 0;
+        color: $soft-gray;
+        font-size: $link-font-size;
+        font-weight: 400;
+        &:hover{
+          color: $header-color;
+          border-bottom: 1px solid $soft-gray;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .links {
       text-align: center;
-      border-bottom: 1px solid darken(#444, 10%);
-      .actions{
-        margin: 10px;
-        a{
-          font-size: $nav-font-size;
-          padding: 10px;
-          margin: 0 5px 0 0;
-          text-decoration: none;
+
+      ul.social {
+        margin: 0;
+        li {
+          list-style-type: none;
+          float: left;
+          font-size: 1em;
+          line-height: 0;
+          margin: 0;
+          padding-right: 0.7em;
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+
+        img {
+          height: 1.6em;
+          opacity: 0.7;
+          padding: 1px;
+
+          &:focus, &:hover {
+            opacity: 1;
+          }
         }
       }
     }
