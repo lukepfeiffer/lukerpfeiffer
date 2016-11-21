@@ -13,13 +13,16 @@
 %body#main
   .main-content
     %nav.navigation
-      %h1 Luke Pfeiffer
+      %h1= link_to 'Luke Pfeiffer', root_path
       .actions
         = link_to 'About', root_path
         = link_to 'Blog', root_path
         = link_to 'Projects', root_path
         = link_to 'Contact', root_path
-        = link_to 'Resume', root_path
+        = link_to 'Resume', resume_path
+
+    = yield
+
     %nav.footer{role: 'contentinfo'}
       .links
         .social
@@ -29,4 +32,3 @@
           %li= link_to(image_tag('facebook.png', alt: 'facebook'), 'https://www.facebook.com/luke.pfeiffer.7', target: '_blank')
 
 
-    = yield
