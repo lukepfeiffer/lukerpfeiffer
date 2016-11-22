@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
 
+  resources :posts
+
   get '/resume', to: 'pages#resume'
   get '/contact', to: 'pages#contact'
   get '/projects', to: 'pages#projects'

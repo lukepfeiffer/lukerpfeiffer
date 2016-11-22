@@ -1,0 +1,12 @@
+#posts
+  .content
+    - if current_user.present?
+      = link_to 'Create Post', new_post_path
+
+    - posts.each do |post|
+      .container
+        %h1= post.title
+        %p.body= post.body
+        %p
+          %span.italic Luke Pfeiffer
+          %span.right= post.created_at.strftime("%B %-d, %Y" )

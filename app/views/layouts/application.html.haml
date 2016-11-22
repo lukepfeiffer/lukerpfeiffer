@@ -4,6 +4,7 @@
   = stylesheet_link_tag    'application', media: 'all'
   = javascript_include_tag 'application'
   = csrf_meta_tags
+  = filepicker_js_include_tag
   = google_webfonts_init({              |
       google: ['Varela Round', 'serif'] |
     })                                  |
@@ -16,11 +17,11 @@
       %h1= link_to 'Luke Pfeiffer', root_path
       .actions
         = link_to 'Home', root_path
-        = link_to 'Blog', root_path
+        = link_to 'Blog', posts_path
         = link_to 'Projects', projects_path
         = link_to 'Contact', contact_path
         = link_to 'Resume', resume_path
-        = link_to 'Sign out', sign_out_path if current_user.present?
+        = link_to 'Sign out', sign_out_path, method: :delete if current_user.present?
 
     = yield
 
