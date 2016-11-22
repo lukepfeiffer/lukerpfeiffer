@@ -19,7 +19,7 @@
 
 #main{
   $font: "Varela Round", sans-serif;
-  $header-color: #111111;
+  $dark-gray: #111111;
   $link-font-size: 24px;
   $soft-gray: #999999;
   $link-color: #517a9e;
@@ -55,16 +55,16 @@
     font-weight: 200;
     a{
       text-decoration: none;
-      color: $header-color;
+      color: $dark-gray;
       &:hover{
-        color: lighten($header-color, 20%);
+        color: lighten($dark-gray, 20%);
       }
     }
   }
 
   .navigation{
     text-transform: uppercase;
-    color: $header-color;
+    color: $dark-gray;
     .actions{
       a{
         margin: 0;
@@ -75,7 +75,7 @@
         font-size: $link-font-size;
         font-weight: 400;
         &:hover{
-          color: $header-color;
+          color: $dark-gray;
           border-bottom: 1px solid $soft-gray;
         }
       }
@@ -116,6 +116,34 @@
           }
         }
       }
+    }
+  }
+
+  #contact{
+    width: 60%;
+    margin: 5em auto 5em auto;
+
+    a, .details{
+      color: $link-color;
+      text-decoration: none;
+      &:hover{
+        color: darken($link-color, 8%);
+      }
+    }
+
+    .primary-contact{
+      text-align: left;
+      border-bottom: 1px solid $soft-gray;
+      padding-bottom: 3em;
+      p{
+        font-size: 18px;
+      }
+    }
+
+    .secondary-contact{
+      font-size: 18px;
+      text-align: left;
+      color: $dark-gray;
     }
   }
 
@@ -160,14 +188,13 @@
         color: $link-color;
         text-decoration: none;
         &:hover{
-          color: $header-color;
+          color: $dark-gray;
           cursor: pointer;
         }
       }
 
       .proficiencies li{
         width: 100%;
-        // display: inline;
       }
 
       ul{
