@@ -7,11 +7,11 @@
         %dt= f.label :title
         %dd= f.text_field :title
 
+        %dt= f.label :Image_url, 'Upload Image'
+        %dd= f.text_field :image_url
+
         %dt= f.label :body
         %dd= f.text_area :body
-
-        %dt= f.label :filepicker_url, 'Upload Image'
-        %dd= f.filepicker_field :filepicker_url
 
     %fieldset.actions
       = f.submit 'Create Post'

@@ -17,7 +17,6 @@ Bundler.require(*Rails.groups)
 
 module Lukerpfeiffer
   class Application < Rails::Application
-    config.filepicker_rails.api_key = 'ATDKxPKRSTYKALBhqQOi9z'
     config.active_record.raise_in_transactional_callbacks = true
   end
 end

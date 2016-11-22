@@ -28,7 +28,7 @@ class PostsController < ApplicationController
     params.require(:post).permit(
       :title,
       :body,
-      :filepicker_url
+      :image_url
     )
   end
 end

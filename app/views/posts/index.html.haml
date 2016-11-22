@@ -6,6 +6,7 @@
     - posts.each do |post|
       .container
         %h1= post.title
+        .image= image_tag post.image_url
         %p.body= post.body
         %p
           %span.italic Luke Pfeiffer
