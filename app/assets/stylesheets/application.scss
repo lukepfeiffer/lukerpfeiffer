@@ -147,6 +147,50 @@
     }
   }
 
+  #projects{
+    width: 60%;
+    margin: 3em auto 5em auto;
+    text-align: left;
+    .content{
+      h1{
+        border-bottom: 1px solid $soft-gray;
+      }
+
+      .project{
+        border-bottom: 1px solid $soft-gray;
+        padding-bottom: 4em;
+
+        .left{
+          width: 25%;
+          img{
+            width: 100%;
+          }
+        }
+
+        .sub-header p{
+          a{
+            color: $link-color;
+            text-decoration: none;
+            &:hover{
+              color: darken($link-color, 8%)
+            }
+          }
+
+          .bold{
+            font-weight: 500;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    #smart-pharmacy{
+      img{
+        width: 54%;
+      }
+    }
+  }
+
   #resume{
     $font-size: 18px;
 
