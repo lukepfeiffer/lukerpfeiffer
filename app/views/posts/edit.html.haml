@@ -1,0 +1,17 @@
+%h1= 'Edit ' + post.title
+
+.form
+  = form_for post do |f|
+    %fieldset
+      %dl
+        %dt= f.label :title
+        %dd= f.text_field :title
+
+        %dt= f.label :Image_url, 'Upload Image'
+        %dd= f.text_field :image_url
+
+        %dt= f.label :body
+        %dd= f.text_area :body
+
+    %fieldset.actions
+      = f.submit 'Create Post'

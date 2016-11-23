@@ -2,18 +2,20 @@
   .content
     - if current_user.present?
       = link_to 'Create Post', new_post_path
-      = link_to 'Archived Posts', archived_path
+      = link_to 'Active Posts', posts_path
 
-    - active_posts.each do |post|
+    - archived_posts.each do |post|
       .container
         %h1= post.title
         .image= image_tag post.image_url
         %p.body= post.body
         %p
+          Archived on:
+          %span.italic #{post.archive_date.strftime("%B %-d, %Y" )}
+        %p
           %span.italic Luke Pfeiffer
           %span.right= post.created_at.strftime("%B %-d, %Y" )
         - if current_user.present?
           .admin-actions.right
-            = link_to 'Archive', archive_path(post_id: post.id), method: :delete, class: 'danger'
+            = link_to 'Unarchive', unarchive_path(post_id: post.id), method: :delete, class: 'danger'
             = link_to 'Edit Post', edit_post_path(post.id), class: 'warning'
-  = will_paginate active_posts
