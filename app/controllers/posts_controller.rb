@@ -2,10 +2,10 @@ class PostsController < ApplicationController
 
   expose :post
   expose :active_posts do
-    Post.active.paginate(page: params[:page], per_page: 1).order('created_at DESC')
+    Post.active.paginate(page: params[:page], per_page: 3).order('created_at DESC')
   end
   expose :archived_posts do
-    Post.archived.order('created_at DESC')
+    Post.archived.(page: params[:page], per_page: 3).order('created_at DESC')
   end
 
   def new
