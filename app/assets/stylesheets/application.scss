@@ -312,11 +312,16 @@
         border-bottom: 1px solid $soft-gray;
         padding-bottom: 6em;
 
-        .left{
+        .image{
+          display: inline-block;
           width: 25%;
           img{
             width: 100%;
           }
+        }
+
+        .details{
+          display: inline-block;
         }
 
         .sub-header {
