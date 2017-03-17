@@ -1,94 +1,201 @@
 #resume
-  = link_to 'Download PDF', '/luke_pfeiffer_resume.pdf', target: '_blank'
   .header
-    %p lukerpfeiffer@ufl.edu
-    %p https://github.com/lukepfeiffer
+    %p
+      = link_to 'lukerpfeiffer@ufl.edu', 'mailto:lukerpfeiffer@ufl.edu'
+    %p
+      = link_to 'https://github.com/lukepfeiffer', 'https://github.com/lukepfeiffer'
+  = link_to 'Download Resume', '/luke_pfeiffer_resume.pdf', target: '_blank'
 
   .content
-    .container
-      .category
-        %h2 Education
-        %p.title
-          %span.bold University of Florida
-          %span.italic, Gainesville, Florida
-          %span.right May 2020
-        %p.italic Computer Engineering (Software)
-
-      .category
-        %h2 Professional Experience
-        %p.title
-          %span.bold Junior Software Engineer
-          %span.italic, Fresh Start Software
-          %span.right June 2015 - Present
+    %h1 Education
+    .category
+      .sub
+        %p
+          .subheader Pursuing BA in Computer Engineering
+          .details University of Florida &bull; May 2020 &bull; GPA: 3.8
         %ul
-          %li Developed software using the Agile Sprint method
-          %li Refactor code from existing webapps to increase the speed of reqeusts to the server
-          %li Lead test driven development to ensure working code and client confidence
-          %li Implemented user interfaces for better user interactions
-
-        %p.title
-          %span.bold Lead Developer
-          %span.italic, Independent Development
-          %span.right August 2016 - Present
+          %li COP3502
+    %h1 Profesional Experience
+    .category
+      .sub
+        %p
+          .subheader Junior Software Developer
+          .details FreshStart Software &bull; June 2015 - December 2016
         %ul
-          %li Determined specs for the project to ensure a correct build and build client confidence
-          %li Developed photo gallery, both front end and back end, from scratch
-          %li Maintained a healthy relationship with client
-
-        %p.title
-          %span.bold Web and Development Chair
-          %span.italic, Association of Computer Engineers
-          %span.right December 2016 - Present
-        %ul
-          %li Organize and present workshops
-          %li Update and add functionality to the organizations website
-          %li Deployed website to archive all workshops for the organization
-
-      .category
-        %h2 Development Experience
-        %p.title
-          %span.bold Personal Website
-          %span.italic, Lukerpfeiffer
-        %ul
-          %li Front end and back end development from scratch
-          %li Create design for the application
-          %li Configured Postgres database
-        %p.title
-          %span.bold Workshop Archive
-          %span.italic, aceworkshops
-          %span.right.bold= link_to 'https://aceworkshops.herokuapp.com', 'https://aceworkshops.herokuapp.com', target: '_blank'
-        %ul
-          %li Front end and Back end development from scratch
-          %li Designed the user interface
-          %li Configured postgres database
-        %p.title
-          %span.bold Java Programs
-          %span.italic, independent development
-          %span.right.bold= link_to 'https://github.com/lukepfeiffer/java_programs', 'https://github.com/lukepfeiffer/java_programs', target: '_blank'
-        %ul
-          %li Learned Java syntax and design patterns
-          %li Developed small games to apply real world examples to data structures
-      .category
-        %h2 Professional Education
-        %p.title
-          %span.bold Mentee
-          %span.italic, under Micah Cooper from Heroku
-          %span.right September 2013 - January 2016
-        %ul
-          %li Developing clean code using Ruby on Rails conventions and design patterns
-          %li Organization of projects through github
-      .category
-        %h2 Programming Proficiencies
-        %ul.proficiencies
+          %li Test Driven Development &bull;
           %li Git Version Management
-          %li Java
-          %li Jquery
-          %li Javascript
-          %li Ruby on Rails
-          %li Ruby
-          %li HTML
-          %li Haml
+        %ul
+          %li Agile Development &bull;
+          %li Jquery &bull;
+          %li Ruby on rails &bull;
+          %li Bootstrap
+      .sub
+        %p
+          .subheader Web Developer
+          .details Indepedent Development &bull; August 2016 - Present
+        %ul
+          %li Ruby on rails &bull;
+          %li Jquery &bull;
+          %li Mysql
+          %li Html
+        %ul
+          %li Healthy Client Relationships
+        %ul
+          %li Responsive Web Design
+
+      .sub
+        %p
+          .subheader Software Developer
+          .details Orbital One &bull; March 2017 - Present
+        %ul
+          %li Ruby on rails &bull;
+          %li Minitest &bull;
+          %li Mysql
+        %ul
+          %li Git Version Management &bull;
+          %li Html
+    %h1 Technical Experience
+    .category
+      .sub
+        %p
+          .subheader Personal Website
+          .details https://lukerpfeiffer.com
+        %ul
+          %li Ruby on rails &bull;
+          %li Responsive Web Design &bull;
+          %li HTML &bull;
           %li CSS
+      .sub
+        %p
+          .subheader Java Programs
+          .details= link_to 'https://github.com/lukepfeiffer/java_programs', 'https://github.com/lukepfeiffer/java_programs', target: '_blank'
+        %ul
+          %li Design Patterns &bull;
+          %li Object Oriented Programming &bull;
+          %li Well Documented Code
+      .sub
+        %p
+          .subheader ACE Workshops
+          .details= link_to 'http://aceworkshops.herokuapp.com/', 'http://aceworkshops.herokuapp.com/', target: '_blank'
+        %ul
+          %li Configure Postgresql Database &bull;
+          %li Dynamic CMS &bull;
+          %li Pagination &bull;
+          %li Ruby on Rails
+    %h1 Projects
+    .category
+      .sub
+        %p
+          .subheader Target Zero
+          .details= link_to 'http://www.target-zero.org/', 'http://www.target-zero.org/', target: '_blank'
+        %ul
+          %li Configure Postgresql Database &bull;
+          %li Dynamic CMS
+        %ul
+          %li Google Maps API Calls &bull;
+          %li Ruby on Rails
+      .sub
+        %p
+          .subheader Smart Pharamcy
+          .details= link_to 'https://smartpharmacy.com/', 'https://smartpharmacy.com/', target: '_blank'
+        %ul
+          %li Twilio Messaging &bull;
+          %li Jquery &bull;
+          %li PDF Generations
+        %ul
+          %li Ruby on Rails
+      .sub
+        %p
+          .subheader DESC of Jacksonville
+          .details= link_to 'http://descjax.org/', 'http://descjax.org/', target: '_blank'
+        %ul
+          %li Test Driven Development &bull;
+          %li Refactoring
+        %ul
+          %li Information Encryption &bull;
+          %li Ruby on Rails
+      .sub
+        %p
+          .subheader Destyn Patera
+          .details= link_to 'http://destynpatera.com/', 'http://destynpatera.com/', target: '_blank'
+        %ul
+          %li Responsive Web Design &bull;
+          %li Jquery &bull;
+          %li Ruby on Rails
+      .sub
+        %p
+          .subheader Comment Catcher
+        %ul
+          %li Ruby on Rails &bull;
+          %li Test Driven Development
+        %ul
+          %li Jquery
+    %h1 Involvement
+    .category
+      .sub
+        %p
+          .subheader Web and Graphic Design Chair
+          .details Association of Computer Engineers &bull; December 2016 - Present
+        %ul
+          %li Organize and Present Workshops &bull;
+          %li Design Promotional Flyers
+        %ul
+          %li Update Website &bull;
+          %li Build External Webapps for Organization
+      .sub
+        %p
+          .subheader Mentor
+          .details Association of Computer Engineers &bull; January 2017 - Present
+        %ul
+          %li Teach Java &bull;
+          %li Organize Workshops &bull;
+          %li Resume Critiques
+    %h1 Programming Proficiencies
+    .category
+      .sub
+        %p
+          .subheader Web Development
+          .details September 2013 - Present
+        %ul
+          %li Ruby on Rails &bull;
+          %li Jquery &bull;
+          %li HTML &bull;
+          %li Bootstrap
+        %ul
+          %li CSS &bull;
+          %li Bourbon &bull;
+          %li Rspec &bull;
+          %li Cucumber
+        %ul
           %li Reactjs (novice)
-          %li Vim Text Editor
-          %li Linux Command Line
+      .sub
+        %p
+          .subheader Other Development
+          .details August 2016 - Present
+        %ul
+          %li Java &bull;
+          %li Eclipse IDE &bull;
+          %li JUnit &bull;
+          %li Sql (novice)
+      .sub
+        %p
+          .subheader Misc Skills
+          .details September 2013 - Present
+        %ul
+          %li Git Version Management &bull;
+          %li Terminal
+        %ul
+          %li Agile Development &bull;
+          %li Working in Teams
+    %h1 Volunteering
+    .category
+      .sub
+        %p
+          .subheader Volunteer Web Developer
+          .details DESC of Jacksonville &bull; November 2015 - March 2016
+        %ul
+          %li Helped improve existing functions and deploy new functions to
+        %ul
+          %li an organization's web application. DESC provides services for
+        %ul
+          %li the homeless and those in need.

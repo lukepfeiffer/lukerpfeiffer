@@ -16,11 +16,9 @@
     %nav.navigation
       %h1= link_to 'Luke Pfeiffer', root_path
       .actions
-        = link_to 'Home', root_path
-        = link_to 'Blog', posts_path
-        = link_to 'Projects', projects_path
-        = link_to 'Contact', contact_path
         = link_to 'Resume', resume_path
+        = link_to 'Contact', contact_path
+        = link_to 'Blog', posts_path
         = link_to 'Sign out', sign_out_path, method: :delete if current_user.present?
 
     = yield
