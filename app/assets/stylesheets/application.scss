@@ -110,37 +110,41 @@
   }
 
   .footer {
-    height: 100%;
-    padding-bottom: 5em;
+
     .links {
       .social {
         padding: 1em 0;
-        width: 98%;
-        margin: 0 1em;
-        float: left;
+        width: 95%;
         border-top: 1px solid $soft-gray;
         border-bottom: 1px solid $soft-gray;
+        text-align: right;
+        margin-left: auto;
+        margin-right: auto;
 
-        li {
-          list-style-type: none;
-          float: left;
-          font-size: 1.4em;
-          padding-right: 0.7em;
+        a{
+          text-decoration: none;
+          font-size: 40px;
+          filter: grayscale(85%);
 
-          &:last-child {
-            padding-right: 0;
+          &:hover{
+            filter: grayscale(0%);
           }
         }
 
-        img {
-          height: 1.6em;
-          opacity: 0.7;
-          padding: 1px;
+        .linkedin{
+          color: #0077B5
+        }
 
-          &:focus, &:hover {
-            opacity: 1;
-            cursor: pointer;
-          }
+        .twitter{
+          color: #4099ff;
+        }
+
+        .github{
+          color: #333;
+        }
+
+        .facebook{
+          color: #3B5998;
         }
       }
     }

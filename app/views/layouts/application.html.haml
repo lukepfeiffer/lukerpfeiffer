@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 %head
   %title Lukerpfeiffer
+  %link{href: "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel: "stylesheet"}
   = stylesheet_link_tag    'application', media: 'all'
   = javascript_include_tag 'application'
   = csrf_meta_tags
@@ -26,9 +27,11 @@
     %nav.footer{role: 'contentinfo'}
       .links
         .social
-          %li= link_to(image_tag('github.png', alt: 'github'), 'https://www.github.com/lukepfeiffer', target: '_blank')
-          %li= link_to(image_tag('linkedin.png', alt: 'linkedin'), 'https://www.linkedin.com/in/luke-pfeiffer-a4a272133', target: '_blank')
-          %li= link_to(image_tag('twitter.png', alt: 'twitter'), 'https://www.twitter.com/lukerpfeiffer', target: '_blank')
-          %li= link_to(image_tag('facebook.png', alt: 'facebook'), 'https://www.facebook.com/luke.pfeiffer.7', target: '_blank')
-
-
+          = link_to 'https://www.github.com/lukepfeiffer', class: 'github' do
+            %i.fa.fa-github-square
+          = link_to 'https://www.linkedin.com/in/lukerpfeiffer/', class: 'linkedin' do
+            %i.fa.fa-linkedin-square
+          = link_to 'https://www.facebook.com/luke.pfeiffer.7', class: 'facebook' do
+            %i.fa.fa-facebook-square
+          = link_to 'https://www.twitter.com/lukerpfeiffer', class: 'twitter' do
+            %i.fa.fa-twitter-square
