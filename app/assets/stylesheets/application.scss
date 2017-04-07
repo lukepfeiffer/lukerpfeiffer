@@ -438,6 +438,26 @@
           }
         }
       }
+      @media only screen and (max-device-width: 768px){
+        .sub{
+          width: 318px;
+        }
+      }
+      @media only screen and (max-device-width: 1200px) and (min-device-width: 769px){
+        .sub{
+          width: 337px;
+        }
+      }
+      @media only screen and (min-device-width: 1201px) and (max-device-width: 1451px){
+        .sub{
+          width: 304px;
+        }
+      }
+      @media only screen and (min-device-width: 1452px){
+        .sub{
+          width: 351px;
+        }
+      }
     }
   }
 }
